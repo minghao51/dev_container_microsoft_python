@@ -1,0 +1,49 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+	"build": {"dockerfile": "Dockerfile"}
+	// "name": "Python 3",
+	// "image": "mcr.microsoft.com/devcontainers/python:0-3.9",
+	// "features": {
+	// 	"ghcr.io/devcontainers/features/github-cli:1": {},
+	// 	"ghcr.io/rocker-org/devcontainer-features/miniforge:1":{}
+	// }
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "mamba install pandas scikit-learn seaborn matplotlib jupyterlab -y && pip install pycaret"
+	
+	// "pip3 install --user -r requirements.txt",
+
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			// "settings": {
+			// 	"editor.formatOnSave": true,
+			// 	"files.insertFinalNewline": true,
+			// 	"[makefile]": {
+			// 		"editor.insertSpaces": false,
+			// 		"editor.detectIndentation": false
+			// 	}
+			// },
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"ms-python.python",
+				// "GitHub.copilot",
+				"ms-toolsai.jupyter",
+				"GitHub.copilot-chat",
+				"GitHub.copilot-labs"
+			]
+		}
+	},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
